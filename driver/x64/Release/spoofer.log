@@ -1,0 +1,20 @@
+﻿  Building 'spoofer' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Microsoft (R) C/C++-Optimierungscompiler Version 19.14.26429.4 für x64
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  
+  cl /c /I"C:\Program Files\mingw-w64\x86_64-7.3.0-win32-seh-rt_v5-rev0\mingw64\x86_64-w64-mingw32\include" /I"C:\Program Files\mingw-w64\x86_64-7.3.0-win32-seh-rt_v5-rev0\mingw64\x86_64-w64-mingw32\include\ddk" /Ix64\Release\ /Zi /W4 /WX- /diagnostics:classic /Ox /Oi /Ot /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0A00 /D WINVER=0x0A00 /D WINNT=1 /D NTDDI_VERSION=0x0A000005 /D KMDF_VERSION_MAJOR=1 /D KMDF_VERSION_MINOR=15 /GF /Gm- /Zp8 /GS- /Gy /fp:precise /Zc:wchar_t- /Zc:forScope /Zc:inline /GR- /Fx /FAcs /Fa"x64\Release\\" /Fo"x64\Release\\" /Fd"x64\Release\vc141.pdb" /FR"x64\Release\\" /Gz /TC /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\shared\warning.h" /analyze- /FC /errorReport:prompt /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ /Qspectre main.c
+  
+  main.c
+d:\vsaktuelleprojekte\hwid\driver\main.c(91): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+d:\vsaktuelleprojekte\hwid\driver\main.c(219): warning C4311: "Typumwandlung": Zeigerverkürzung von "PUNICODE_STRING" zu "ULONG"
+  Microsoft (R) Incremental Linker Version 14.14.26429.4
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  "/OUT:D:\VSAKTUELLEPROJEKTE\HWID\driver\x64\Release\spoofer.sys" "/VERSION:10.0" /INCREMENTAL:NO /WX "/SECTION:INIT,d" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\km\x64\BufferOverflowFastFailK.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\km\x64\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\km\x64\hal.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.17134.0\km\x64\wmilib.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST:NO "/PDB:D:\VSAKTUELLEPROJEKTE\HWID\driver\x64\Release\spoofer.pdb" /MAP /MAPINFO:EXPORTS "/SUBSYSTEM:NATIVE,10.00" /LARGEADDRESSAWARE /Driver /OPT:REF /OPT:ICF "/ENTRY:DriverEntry" /RELEASE /DYNAMICBASE /NXCOMPAT "/IMPLIB:D:\VSAKTUELLEPROJEKTE\HWID\driver\x64\Release\spoofer.lib" "/MERGE:_TEXT=.text;_PAGE=PAGE" /MACHINE:X64 /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:10.0 /pdbcompress /debugtype:pdata x64\Release\main.obj 
+  spoofer.vcxproj -> D:\VSAKTUELLEPROJEKTE\HWID\driver\x64\Release\spoofer.sys
+  Done Adding Additional Store
+  Successfully signed: D:\VSAKTUELLEPROJEKTE\HWID\driver\x64\Release\spoofer.sys
+  
+  Driver is a Universal Driver.
+  Inf2Cat task was skipped as there were no inf files to process
+  
